@@ -1,0 +1,99 @@
+@import "@/styles/variables.scss";
+
+.banner {
+  height: 720px;
+  position: relative;
+  @include media(base) {
+    height: 900px;
+  }
+  @include media(desktop) {
+    height: 514px;
+  }
+  @include media(tablet) {
+    height: 408px;
+  }
+  @include media(mobile) {
+    height: 403px;
+  }
+}
+
+.screen {
+  display: grid;
+  gap: 226px;
+  grid-template-columns: 41.7% 1fr;
+  padding: 32px 0 30px;
+  align-items: flex-start;
+  @include media(base) {
+    padding: 20px 0 77px;
+    gap: 293px;
+  }
+  @include media(desktop) {
+    padding: 89px 0 30px;
+    gap: 148px;
+    grid-template-columns: 42.33% 1fr;
+  }
+  @include media(tablet) {
+    padding: 0 0 40px;
+    gap: 94px;
+    grid-template-columns: 36.4% 1fr;
+  }
+  @include media(mobile) {
+    grid-template-columns: 1fr;
+    gap: 56px;
+    padding: 0 0 20px;
+  }
+}
+
+.toUp {
+  position: absolute;
+  top: 90px;
+  right: 0;
+  transform: translateX(50%);
+}
+
+.sideLeft {
+  display: grid;
+  gap: 27px;
+  text-align: right;
+  position: relative;
+  @include media(mobile) {
+    left: -43.5px;
+  }
+}
+
+.sideRight {
+  max-width: 454px;
+  padding-top: 102px;
+  @include media(base) {
+    max-width: 587px;
+    padding-top: 133px;
+  }
+  @include media(desktop) {
+    max-width: 334px;
+    padding-top: 76px;
+  }
+  @include media(tablet) {
+    max-width: none;
+    padding-top: 50px;
+  }
+  @include media(mobile) {
+    max-width: none;
+    padding-top: 0;
+  }
+}
+
+.textPad {
+  padding: 100px 0 96px;
+  @include media(base) {
+    padding: 120px 0 100px;
+  }
+  @include media(desktop) {
+    padding: 65px 0 60px;
+  }
+  @include media(tablet) {
+    padding: 20px 0 30px;
+  }
+  @include media(mobile) {
+    padding: 40px 0 20px;
+  }
+}

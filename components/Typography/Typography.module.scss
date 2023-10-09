@@ -1,0 +1,333 @@
+@import "@/styles/variables.scss";
+
+.name {
+  color: var(--text-color);
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.6;
+  text-transform: uppercase;
+  @include media(base) {
+    font-size: 1.125rem;
+  }
+  @include media(desktop) {
+    font-size: 0.625rem;
+  }
+  @include media(tablet) {
+    font-size: 0.625rem;
+  }
+  @include media(mobile) {
+    font-size: 0.625rem;
+  }
+}
+
+.buttonPlay {
+  color: white;
+  font-size: 0.875rem;
+  line-height: 1.6; 
+  text-transform: uppercase;
+  @include media(base) {
+    font-size: 1.125rem;
+  }
+  @include media(desktop) {
+    font-size: 0.625rem;
+  }
+  @include media(tablet) {
+    font-size: 0.625rem;
+  }
+  @include media(mobile) {
+    font-size: 0.625rem;
+  }
+}
+
+.small {
+  font-size: 0.813rem;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: var(--brand-color);
+  @include media(base) {
+    font-size: 1.063rem;
+  }
+  @include media(desktop) {
+    font-size: 0.688rem;
+  }
+  @include media(tablet) {
+    font-size: 0.688rem;
+  }
+  @include media(mobile) {
+    font-size: 0.688rem;
+  }
+}
+
+.title1 {
+  color: var(--brand-color);
+  font-size: 1.625rem;
+  font-weight: 400;
+  line-height: 1.4;
+  text-transform: uppercase;
+
+  @include media(base) {
+    font-size: 1.938rem;
+  }
+  @include media(desktop) {
+    font-size: 1.188rem;
+  }
+  @include media(tablet) {
+    font-size: 1.625rem;
+  }
+  @include media(mobile) {
+    font-size: 0.813rem;
+    line-height: 1.5;
+  }
+}
+
+.title2 {
+  color: var(--text-color);
+  font-size: 1.625rem;
+  line-height: 1.4;
+  text-transform: uppercase;
+
+  @include media(base) {
+    font-size: 2.125rem;
+  }
+  @include media(desktop) {
+    font-size: 1.188rem;
+  }
+  @include media(tablet) {
+    font-size: 1.188rem;
+  }
+  @include media(mobile) {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  &::before {
+    content: "";
+    margin: 0 0 50px;
+    display: block;
+    width: 49px;
+    height: 9px;
+    background-color: var(--brand-color);
+    @include media(base) {
+      width: 63px;
+      height: 12px;
+      margin: 0 0 65px;
+    }
+    @include media(desktop) {
+      width: 35px;
+      height: 6px;
+      margin: 0 0 35px;
+    }
+    @include media(tablet) {
+      width: 35px;
+      height: 6px;
+      margin: 0 0 30px;
+    }
+    @include media(mobile) {
+      width: 35px;
+      height: 6px;
+      margin: 0 0 30px;
+    }
+  }
+  span {
+    color: var(--brand-color);
+  }
+}
+
+.text {
+  color: var(--text-color);
+  font-size: 1rem;
+  line-height: 1.6;
+  text-transform: uppercase;
+  span {
+    color: var(--brand-color);
+  }
+  @include media(base) {
+    font-size: 1.25rem;
+  }
+  @include media(desktop) {
+    font-size: 0.75rem;
+    line-height: 1.8;
+  }
+  @include media(tablet) {
+    font-size: 0.75rem;
+    line-height: 1.8;
+  }
+  @include media(mobile) {
+    font-size: 0.688rem;
+    line-height: 1.8;
+  }
+}
+
+.menu {
+  color: var(--text-color);
+  font-size: 0.813rem;
+  font-weight: 600;
+  line-height: 0.813rem;
+  letter-spacing: 0.91px;
+  text-transform: uppercase;
+  cursor: pointer;
+  @include media(base) {
+    font-size: 0.938rem;
+    line-height: 0.938rem;
+    letter-spacing: 1.05px;
+  }
+  @include media(desktop) {
+    font-size: 0.75rem;
+    line-height: 0.75rem;
+    letter-spacing: 0.84px;
+  }
+  @include media(tablet) {
+    font-size: 0.75rem;
+    line-height: 0.75rem;
+    letter-spacing: 0.84px;
+  }
+  @include media(mobile) {
+    display: none;
+  }
+}
+
+.phone {
+  color: var(--text-color);
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1;
+  transition: all .2s ease-in-out;
+  &:hover {
+    color: var(--brand-color);
+  }
+  @include media(base) {
+    font-size: 1.063rem;
+  }
+  @include media(desktop) {
+    font-size: 0.813rem;
+  }
+  @include media(tablet) {
+    display: none;
+  }
+  @include media(mobile) {
+    display: none;
+  }
+}
+
+.call {
+  color: var(--brand-color);
+  font-size: 0.813rem;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0.91px;
+  text-transform: uppercase;
+  cursor: pointer;
+  user-select: none;
+  @include media(base) {
+    font-size: 0.938rem;
+    letter-spacing: 1.05px;
+  }
+  @include media(desktop) {
+    font-size: 0.75rem;
+    letter-spacing: 0.84px;
+  }
+  @include media(tablet) {
+    display: none;
+  }
+  @include media(mobile) {
+    display: none;
+  }
+}
+
+.selectPlaceholder {
+  color: white;
+  font-size: 0.813rem;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0.91px;
+  text-transform: uppercase;
+  @include media(base) {
+    font-size: 0.938rem;
+    letter-spacing: 1.05px;
+  }
+  @include media(desktop) {
+    font-size: 0.75rem;
+    letter-spacing: 0.84px;
+  }
+}
+
+.formTitle {
+  color: black;
+  text-align: center;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  @include media(base) {
+    font-size: 3.25rem;
+  }
+  @include media(desktop) {
+    font-size: 1.75rem;
+    line-height: 1.4;
+  }
+  @include media(tablet) {
+    font-size: 1.75rem;
+    line-height: 1.4;
+  }
+  @include media(mobile) {
+    font-size: 1.25rem;
+    line-height: 1.4;
+    max-width: 203px;
+  }
+}
+
+.inputPlaceholder {
+  color: black;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-transform: uppercase;
+  @include media(base) {
+    font-size: 1.063rem;
+  }
+  @include media(desktop) {
+    font-size: 0.875rem;
+  }
+  @include media(tablet) {
+    font-size: 0.875rem;
+  }
+  @include media(mobile) {
+    font-size: 0.688rem;
+  }
+}
+
+.formText {
+  color: rgba(0,0,0, .5);
+  text-align: center;
+  font-size: 0.75rem;
+  line-height: 1.4;
+  a {
+    text-decoration: underline;
+    transition: color .2s ease-in-out;
+    &:hover {
+      color: rgba(0,0,0, .8);
+    }
+  }
+  @include media(base) {
+    font-size: 0.875rem;
+  }
+  @include media(desktop) {
+    font-size: 0.688rem;
+    line-height: 1.6;
+    br {
+      display: none;
+    }
+  }
+  @include media(tablet) {
+    font-size: 0.688rem;
+    line-height: 1.6;
+    br {
+      display: none;
+    }
+  }
+  @include media(mobile) {
+    font-size: 0.75rem;
+    line-height: 1.6;
+    br {
+      display: none;
+    }
+  }
+}

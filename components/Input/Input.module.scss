@@ -1,0 +1,53 @@
+@import "@/styles/variables.scss";
+
+.input {
+  border-bottom: 1px solid rgba(0,0,0, .2);
+  position: relative;
+  input {
+    appearance: none;
+    -webkit-appearance: none;
+    border: 0;
+    outline: none;
+    margin-bottom: 4px;
+    height: 22px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: inherit;
+    font-size: 1rem;
+    &::placeholder {
+      display: none;
+      opacity: 0;
+    }
+    @include media(base) {
+      height: 27px;
+      margin-bottom: 5px;
+      font-size: 1.063rem;
+    }
+    @include media(desktop) {
+      font-size: 0.875rem;
+    }
+    @include media(tablet) {
+      font-size: 0.875rem;
+    }
+    @include media(mobile) {
+      height: 18px;
+      margin-bottom: 3px;
+      font-size: 0.688rem;
+    }
+  }
+  &.active {
+    .placeholder {
+      transform: translateY(-100%) scale(.7);
+    }
+  }
+}
+
+.placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transition: all .2s ease-in;
+  transform-origin: left bottom;
+}

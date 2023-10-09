@@ -1,0 +1,120 @@
+@import "@/styles/variables.scss";
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  z-index: 10;
+  background: white;
+  @include media(base) {
+    height: 131px;
+  }
+  @include media(desktop) {
+    height: 103px;
+  }
+  @include media(tablet) {
+    height: 123px;
+  }
+  @include media(mobile) {
+    height: 81px;
+  }
+  section {
+    display: flex;
+  }
+}
+
+.logo {
+  width: 156px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  user-select: none;
+  pointer-events: none;
+  @include media(base) {
+    width: 187px;
+  }
+  @include media(mobile) {
+    width: 130px;
+  }
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  @include media(base) {
+    gap: 43px;
+  }
+  @include media(desktop) {
+    gap: 25px;
+  }
+  @include media(tablet) {
+    width: 100%;
+    justify-content: space-between;
+  }
+  @include media(mobile) {
+    width: 100%;
+  }
+}
+
+.call {
+  display: none;
+  @include media(tablet) {
+    display: block;
+  }
+  @include media(mobile) {
+    display: block;
+  }
+}
+
+.select {
+  @include media(mobile) {
+    display: none
+  }
+}
+
+.headerLeftMobile {
+  display: flex;
+  align-items: center;
+  @include media(tablet) {
+    gap: 62px;
+  }
+  @include media(mobile) {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  @include media(base) {
+    gap: 45px;
+  }
+  @include media(desktop) {
+    gap: 35px;
+  }
+  @include media(tablet) {
+    display: none;
+  }
+  @include media(mobile) {
+    display: none;
+  }
+}

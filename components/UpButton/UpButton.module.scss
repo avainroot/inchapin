@@ -1,0 +1,37 @@
+@import "@/styles/variables.scss";
+
+.up {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: var(--brand-color);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  span {
+    width: 24.5%;
+    transition: all .2s ease-in-out;
+  }
+  @include media(base) {
+    width: 259px;
+    height: 259px;
+  }
+  @include media(desktop) {
+    width: 148px;
+    height: 148px;
+  }
+  @include media(tablet) {
+    width: 81px;
+    height: 81px;
+  }
+  @include media(mobile) {
+    width: 87px;
+    height: 87px;
+  }
+  &:hover {
+    span {
+      transform: translateY(-15%);
+    }
+  }
+}

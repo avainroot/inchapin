@@ -1,0 +1,58 @@
+@import "@/styles/variables.scss";
+
+.screen {
+  display: grid;
+  gap: 40px;
+  grid-template-rows: 1fr auto;
+  padding: 103px 0 78px;
+  @include media(base) {
+    gap: 50px;
+    padding: 130px 0 130px;
+  }
+  @include media(desktop) {
+    gap: 30px;
+    padding: 103px 0 37px;
+  }
+  @include media(tablet) {
+    gap: 39px;
+    padding: 123px 0 90px;
+  }
+  @include media(mobile) {
+    gap: 19px;
+    padding: 81px 0 55px;
+  }
+}
+
+.title {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  @include media(tablet) {
+    display: grid;
+  }
+  @include media(mobile) {
+    display: grid;
+  }
+  img {
+    max-width: 717px;
+    user-select: none;
+    pointer-events: none;
+    @include media(base) {
+      max-width: 862px;
+    }
+    @include media(desktop) {
+      max-width: 554px;
+    }
+    @include media(tablet) {
+      max-width: none;
+    }
+    @include media(mobile) {
+      max-width: none;
+    }
+  }
+}
+
+.banner {
+  overflow: hidden;
+}
