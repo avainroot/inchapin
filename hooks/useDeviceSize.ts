@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 export const useDeviceSize = () => {
-  const [size, setSize] = useState<number>();
+  const [size, setSize] = useState<number | null>(null);
 
   const setScreenSize = () => setSize(document.body.clientHeight);
 
@@ -9,11 +9,11 @@ export const useDeviceSize = () => {
     setScreenSize();
     addEventListener("resize", setScreenSize);
     return () => {
-      removeEventListener("click", setScreenSize);
+      removeEventListener("resize", setScreenSize);
     };
   }, []);
 
   return {
-    size: `${size}px`,
+    size,
   };
 };

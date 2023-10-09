@@ -8,7 +8,7 @@ import { useDeviceSize } from "@/hooks/useDeviceSize";
 export const FirstScreen = () => {
   const { size } = useDeviceSize();
   return (
-    <div className={styles.screen} style={{ height: size }}>
+    <div className={styles.screen} style={{ height: `${size}px` }}>
       <div className={styles.banner}>
         <Image
           src={banner}
